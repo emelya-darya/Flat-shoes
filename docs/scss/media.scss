@@ -1,0 +1,274 @@
+@media (max-width:1200px){
+	.header__container_bottom{
+		padding-top: 20px;
+	}
+	.header__logo {
+	margin-top: -50px;
+}
+	.header__logo img{
+		width: 100px;
+	}
+}
+@media (max-width:1100px){
+	.header__right{
+		flex-direction: column;
+		width: 280px;
+		// justify-content: flex-start;
+	}
+.header__wishlist {
+		flex: 0 1 auto;
+		margin-bottom: 10px;
+	
+}
+.cart-header__table,
+.wishlist-header__table{
+	border: 0px solid grey;
+}
+.header__cart {
+	flex: 0 1 auto;
+	margin-bottom: 10px;
+}
+.wishlist-header__table,
+.cart-header__table {
+	margin-bottom: 0px;
+}
+.header__empty-slot._active{
+	display: none;
+}
+
+.header__wishlist._active{
+	.wishlist-header__items{
+		display: none;
+	}
+	
+	
+}
+.header__cart._active{
+	.cart-header__items{
+		display: none;
+	}
+	
+}
+
+.header__buttons{
+	position: relative;
+	top: 0px;
+	right: 0;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.header__show-all,
+.header__check-out{
+	height: 40px;
+	flex: 0 1 auto;
+}
+}
+
+@media (max-width:810px){
+.header__right{
+	width: 220px;
+}
+}
+
+@media (max-width:690px){
+.header__logo{
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	z-index: 10;
+	transform: translateX(-50%);
+	margin-top: 0px;
+}
+.header__bottom{
+	padding-top: 40px;
+}
+.header__container_bottom{
+	display: grid;
+	grid-template-columns: 1fr 1px 1fr;
+	column-gap: 30px;
+}
+.header__right{
+	grid-column: 3/4;
+}
+.header__left {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+}
+@media (max-width:530px){
+	.header__wishlist{
+		display: none;
+	}
+	.header__search-form{
+		display: none;
+	}
+.header__register{
+	font-size: 16;
+	line-height: 220%;
+}
+.header__login-register,
+.header__service{
+	height: 20px;
+}
+.header__left{
+	flex-direction: row;
+	margin-top: -40px;
+}
+.header__container_bottom{
+	column-gap: 0;
+}
+}
+
+
+
+@media (max-width:930px){
+	.categories__container{
+		flex-direction: column;
+	}
+}
+
+@media (max-width:1230px){
+.adds__container {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: 1fr 1fr 0.8fr 1fr;
+	min-height: 2790px;
+}
+.adds__collection {
+	grid-column: 1/2;
+	grid-row: 1/span 2;
+}
+
+.adds__sale {
+	grid-column: 1/span 2;
+	grid-row: 4/5;
+	
+}
+.adds__small-img {
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+.adds__big-img {
+	grid-column: 1/span 2;
+	grid-row: 3/4;
+}
+.adds__arrivals {
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+}
+
+@media (max-width:1130px){
+	.adds__container {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: 1fr 1fr 0.8fr 0.9fr;
+	
+
+}}
+@media (max-width:1045px){
+	.adds__container {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: 1fr 1fr 0.7fr 0.8fr;
+	
+	.adds__small-img> img{
+		object-position: 90% center;
+	}
+
+}}
+
+
+
+@media (max-width:980px){
+	.adds__container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5,max-content);
+	min-height: auto;
+	
+}
+.adds__collection {
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+
+.adds__sale {
+	grid-column: 1/2;
+	grid-row: 5/6;
+	
+}
+.adds__small-img {
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+.adds__big-img {
+	grid-column: 1/2;
+	grid-row: 4/5;
+}
+.adds__arrivals {
+	grid-column: 1/2;
+	grid-row: 3/4;
+}
+.adds__sale> img,
+.adds__collection> img,
+.adds__small-img> img,
+.adds__big-img> img,
+.adds__arrivals> img{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+}
+
+@media (max-width:992px){
+	.featured-arrivals__item-mask{
+		display: none;
+	}
+}
+@media (max-width:600px){
+
+.featured-arrivals__title-featured,
+.featured-arrivals__title-arrivals{
+	font-size: 32px;
+}
+}
+@media (max-width:480px){
+	.featured-arrivals__title{
+	gap: 10px;
+} 
+.featured-arrivals__title-featured{
+	font-size: 25px;
+
+	&::after{
+		display: none;
+	}
+}
+.featured-arrivals__title-arrivals{
+	font-size: 25px;
+}
+
+}
+
+@media (max-width:700px){
+	.categories2__items{
+		flex-direction: column;
+
+		padding: 0px;
+		margin-top: 25px;
+	}
+
+}
+
+@media (max-width:370px){
+	.footer-bottom__container{
+		gap: 17px;
+	}
+}
